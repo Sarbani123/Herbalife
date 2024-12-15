@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbalife Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- For icons -->
+    <style>
+        /* Global Styles */
+        body {
+            
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #006400, #228B22); /* Herbalife green gradient background */
+            color: white;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8); /* Dark header background */
+            color: #FFD700; /* Golden text for Herbalife theme */
+            padding: 1.5em 0;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+            position: relative; /* To position the "Go Home" button */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin: 0.5em 0;
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+
+        /* Button Style for "Go Home" */
+        .go-home-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #FFD700;
+            color: #006400;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .go-home-btn:hover {
+            background-color: #FFC107;
+        }
+
+        /* Section for Product Highlights */
+        .products-section {
+            margin: 3em auto;
+            padding: 3em;
+            max-width: 1000px;
+            background-color: rgba(10, 10, 10, 0.85); /* Semi-transparent background */
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.7); /* Glowing effect */
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .products-section h2 {
+            font-size: 2.5em;
+            text-align: center;
+            border-bottom: 2px solid #FFD700; /* Golden border */
+            padding-bottom: 0.5em;
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2.5em;
+            margin-top: 2em;
+        }
+
+        .product {
+            background-color: #1a1a1a;
+            border-radius: 12px;
+            padding: 2.5em;
+            width: 180px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.6); /* Glowing effect */
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+            background-color: #333333;
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.9);
+        }
+
+        .product-icon {
+            font-size: 3.5em;
+            color: #FFD700;
+            margin-bottom: 1.5em;
+        }
+
+        .product-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #FFD700;
+        }
+
+        .product-description {
+            font-size: 1em;
+            color: #bbb;
+            margin-top: 0.5em;
+        }
+
+        .extra-info {
+            margin-top: 3em;
+            text-align: center;
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+
+        .extra-info h3 {
+            color: #FFD700;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            margin-bottom: 0.5em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #FFD700;
+            margin-top: auto;
+            font-size: 0.9em;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .products-section h2 {
+                font-size: 2em;
+            }
+
+            .products-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product {
+                width: 100%;
+                max-width: 300px;
+                margin-bottom: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Herbalife Products</h1>
+        <p>Discover the amazing benefits of Herbalife nutrition</p>
+        <!-- Go Home Button -->
+        <button class="go-home-btn" onclick="window.location.href='index.html'">Go Home</button>
+    </header>
+
+    <section class="products-section">
+        <h2>Our Featured Products</h2>
+        <div class="products-container">
+            <!-- Afresh -->
+            <div class="product">
+                <div class="product-icon"><i class="fas fa-coffee"></i></div>
+                <div class="product-name">Afresh</div>
+                <div class="product-description">
+                    A refreshing and energizing drink to kickstart your day with herbal goodness.
+                </div>
+            </div>
+
+            <!-- Formula 1 -->
+            <div class="product">
+                <div class="product-icon"><i class="fas fa-blender"></i></div>
+                <div class="product-name">Formula 1</div>
+                <div class="product-description">
+                    A balanced meal replacement shake for weight management and nutrition.
+                </div>
+            </div>
+
+            <!-- Skin Booster -->
+            <div class="product">
+                <div class="product-icon"><i class="fas fa-spa"></i></div>
+                <div class="product-name">Skin Booster</div>
+                <div class="product-description">
+                    Enhances your skin's health with collagen and vitamins for a radiant glow.
+                </div>
+            </div>
+
+            <!-- Multivitamin -->
+            <div class="product">
+                <div class="product-icon"><i class="fas fa-capsules"></i></div>
+                <div class="product-name">Multivitamin</div>
+                <div class="product-description">
+                    Supports your daily nutritional needs with a comprehensive blend of vitamins.
+                </div>
+            </div>
+        </div>
+
+        <div class="extra-info">
+            <h3>About Herbalife</h3>
+            <p>Herbalife is a global leader in nutrition and wellness, committed to helping people lead healthier lives. With a wide range of products designed to promote better nutrition, weight management, and overall wellness, Herbalife has become a trusted name in the health industry.</p>
+
+            <h3>Global Presence</h3>
+            <p>Herbalife operates in over 90 countries, providing millions of customers with access to high-quality nutrition products. Backed by scientific research and a network of health professionals, Herbalife is dedicated to creating positive global change through better health.</p>
+
+            <h3>Safety and Quality</h3>
+            <p>Herbalife ensures the highest safety and quality standards across all its products. Every ingredient undergoes rigorous testing, ensuring that customers receive only the best in health and nutrition. Trust Herbalife for a healthier, happier you.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Designed by Subham Patra</p>
+    </footer>
+</body>
+</html>
